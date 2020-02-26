@@ -7,15 +7,257 @@
     <!-- Style Library CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 </head>
 <body>
+    <div class="container mt-5">
+        <div class="title text-center">
+            <h1 class="display-4">Simple Owl Slider</h1>
+            <p class="lead">Using HTML Data Attribute</p>
+        </div>
+        <br><br><br>
 
-    <!-- here we start -->
-    <div class="container">
-        <h1>This is the title</h1>
+        <!-- Here The Main Things -->
+        <div class="mb-5">
+            <div class="title">
+                <h2 class="h3 font-weight-light">Simple Slider</h2>
+                <p class="font-weight-light">5 Items</p>
+            </div>
+            <div class="owl-slider" data-item="5" data-margin="10">
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+1" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+2" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+3" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+4" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+5" alt="example">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <div class="title">
+                <h2 class="h3 font-weight-light">Responsive Slider</h2>
+                <p class="font-weight-light">5 Items on <b>Large Desktop</b>, 4 Items on <b>Small Desktop</b>, 3 Items on <b>Tablet</b>, 1 Item on <b>Phone</b></p>
+            </div>
+            <div class="owl-slider" data-item-xl="5" data-item-lg="4" data-item-md="3" data-item-sm="1" data-margin="10">
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+1" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+2" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+3" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+4" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+5" alt="example">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <div class="title">
+                <h2 class="h3 font-weight-light">Tight Margin Slider</h2>
+                <p class="font-weight-light">Using data attribute <b><i>data-margin="1"</i></b></p>
+            </div>
+            <div class="owl-slider" data-margin="1" data-item="5">
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+1" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+2" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+3" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+4" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+5" alt="example">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <div class="title">
+                <h2 class="h3 font-weight-light">Autoplay Off & Loop Off</h2>
+                <p class="font-weight-light">
+                    <b><i></i>data-autoplay="false"</i></b><br>
+                    <b><i>data-loop="false"</i></b>
+                </p>
+            </div>
+            <div class="owl-slider" data-autoplay="false" data-loop="false" data-margin="10" data-item="5">
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+1" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+2" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+3" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+4" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+5" alt="example">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <div class="title">
+                <h2 class="h3 font-weight-light">Fast Timeout & Stop on Mouse Hover</h2>
+                <p class="font-weight-light">
+                    <b><i>data-hover-pause="true"</i></b><br>
+                    <b><i>data-timeout="500"</i></b> (in miliseconds) - This will make the slide very fast (but not worked on autoplay off)
+                </p>
+            </div>
+            <div class="owl-slider" data-timeout="500" data-hover-pause="true" data-margin="10" data-item="5">
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+1" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+2" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+3" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+4" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+5" alt="example">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <div class="title">
+                <h2 class="h3 font-weight-light">Custom Animation</h2>
+                <p class="font-weight-light">
+                    <b><i>data-animation="fadeOut"</i></b><br>
+                    Still on development, <b>NOT WORKED</b> on item more than 1
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <div class="owl-slider" data-animation="fadeOut">
+                        <div class="item">
+                            <img src="https://via.placeholder.com/200x150?text=Example+1" alt="example">
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/200x150?text=Example+2" alt="example">
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/200x150?text=Example+3" alt="example">
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/200x150?text=Example+4" alt="example">
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/200x150?text=Example+5" alt="example">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <div class="title">
+                <h2 class="h3 font-weight-light">Undragable Slide</h2>
+                <p class="font-weight-light"><b><i>data-drag="false"</i></b></p>
+            </div>
+            <div class="owl-slider" data-drag="false" data-margin="10" data-item="5">
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+1" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+2" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+3" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+4" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+5" alt="example">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <div class="title">
+                <h2 class="h3 font-weight-light">Smart Loop</h2>
+                <p class="font-weight-light">
+                    <p class="font-weight-light"><b><i>data-smart-loop="true"</i></b><br>
+                    Loop while the total available item is <b>more</b> than item appear on the screen.<br>
+                    If the total item is <b>less or equal</b> to the item appear on screen, loop will <b>disable</b>
+                </p>
+            </div>
+            <p>Total Item 6 - Loop Enabled</p>
+            <div class="owl-slider" data-smart-loop="true" data-margin="10" data-item="5">
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+1" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+2" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+3" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+4" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+5" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+6" alt="example">
+                </div>
+            </div>
+            <br>
+            <p>Total Item 5 - Loop Disabled</p>
+            <div class="owl-slider" data-smart-loop="true" data-margin="10" data-item="5">
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+1" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+2" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+3" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+4" alt="example">
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/200x150?text=Example+5" alt="example">
+                </div>
+            </div>
+        </div>
+        <!-- // -->
+
+        <footer class="mt-5 py-5 text-center">
+            <hr>
+            <p>
+                Big Thanks &nbsp;<i class="fas fa-heart"></i>&nbsp; to <a class="text-muted text-decoration-none" href="https://owlcarousel2.github.io/OwlCarousel2/">David Deutsch - Owl Carousel</a><br>
+                <a class="text-muted text-decoration-none" href="https://getbootstrap.com/">Bootstrap</a> - <a class="text-muted text-decoration-none" href="https://jquery.com/">Jquery</a> - <a class="text-muted text-decoration-none" href="https://fontawesome.com/">Font Awesome</a>
+            </p>
+        </footer>
     </div>
 
     <!-- Javascript Library CDN -->
@@ -23,7 +265,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- Main Script -->
-    <script src="main.js"></script>
+    <!-- Main Script - Simple Owl Slider Script -->
+    <script src="simple-owl-slider.js"></script>
 </body>
 </html>
